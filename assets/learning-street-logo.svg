@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
+<title id="title">Learning Street</title><desc id="desc">Learning Street online learning platform logo with an open door and a road leading toward it.</desc>
+<defs>
+  <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#082b55"/><stop offset="1" stop-color="#174f87"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b9822d"/><stop offset="1" stop-color="#e3b65e"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#fff4cf"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#082b55" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1000" height="720" rx="34" fill="#fff"/>
+<circle cx="505" cy="170" r="145" fill="url(#glow)"/>
+<g filter="url(#shadow)">
+  <path d="M425 90h150v145h-28V118h-94v117h-28z" fill="url(#navy)"/>
+  <path d="M545 112l98-36v180l-98-25z" fill="url(#navy)"/>
+  <circle cx="620" cy="171" r="6" fill="url(#gold)"/>
+  <path d="M514 226c-74 31-123 71-118 113 5 43 68 52 122 75 57 24 82 50 76 88-7 44-59 75-149 98 129-15 211-52 223-110 11-55-32-97-104-126-58-24-105-36-106-67-1-25 24-49 71-71z" fill="url(#navy)"/>
+  <path d="M522 229c-46 29-70 54-66 76 5 25 38 37 83 54 62 24 88 48 82 81-4 23-24 45-58 63 45-18 76-43 82-72 7-37-24-67-88-93-43-17-74-30-77-51-2-18 16-37 53-58z" fill="none" stroke="url(#gold)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M527 229c-39 27-57 48-53 65 5 21 34 31 75 47 61 24 83 46 78 75" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+</g>
+<text x="500" y="525" text-anchor="middle" fill="#082b55" font-size="106" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700">Learning</text>
+<line x1="235" y1="575" x2="350" y2="575" stroke="#c9953a" stroke-width="3"/><line x1="650" y1="575" x2="765" y2="575" stroke="#c9953a" stroke-width="3"/>
+<text x="500" y="590" text-anchor="middle" fill="#082b55" font-size="48" font-family="Arial, sans-serif" letter-spacing="18">STREET</text>
+<text x="500" y="645" text-anchor="middle" fill="#173d6a" font-size="20" font-family="Arial, sans-serif" letter-spacing="7">ONLINE LEARNING PLATFORM</text>
+<text x="500" y="687" text-anchor="middle" fill="#6b7688" font-size="18" font-family="Georgia, serif" font-style="italic">Your path to knowledge. Your future.</text>
+</svg>
