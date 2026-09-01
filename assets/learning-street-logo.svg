@@ -1,36 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
-<title id="title">Learning Street</title><desc id="desc">Learning Street logo with a three-dimensional open navy door, bright doorway and curved road.</desc>
+<title id="title">Learning Street</title><desc id="desc">Learning Street logo with open blue door and winding road.</desc>
 <defs>
- <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#062a55"/><stop offset=".58" stop-color="#073d77"/><stop offset="1" stop-color="#0b5598"/></linearGradient>
- <linearGradient id="door" x1="0" y1="0" x2="1" y2=".3"><stop stop-color="#0d5799"/><stop offset=".42" stop-color="#083d75"/><stop offset="1" stop-color="#041d3b"/></linearGradient>
- <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b77b20"/><stop offset=".55" stop-color="#dca743"/><stop offset="1" stop-color="#f2ca69"/></linearGradient>
- <linearGradient id="inside" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff"/><stop offset=".65" stop-color="#fffdf4"/><stop offset="1" stop-color="#ffe8a5"/></linearGradient>
- <radialGradient id="glow"><stop stop-color="#ffe7a0" stop-opacity=".7"/><stop offset=".45" stop-color="#fff8df" stop-opacity=".28"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
- <filter id="softShadow" x="-40%" y="-40%" width="190%" height="200%"><feDropShadow dx="8" dy="15" stdDeviation="13" flood-color="#082b55" flood-opacity=".22"/></filter>
- <filter id="roadShadow" x="-30%" y="-30%" width="170%" height="190%"><feDropShadow dx="0" dy="13" stdDeviation="12" flood-color="#082b55" flood-opacity=".20"/></filter>
+ <linearGradient id="frameBlue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07539a"/><stop offset=".55" stop-color="#063a73"/><stop offset="1" stop-color="#03274f"/></linearGradient>
+ <linearGradient id="doorBlue" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0b5ba2"/><stop offset=".42" stop-color="#08437f"/><stop offset="1" stop-color="#031d3c"/></linearGradient>
+ <linearGradient id="roadBlue" x1=".2" y1="0" x2=".8" y2="1"><stop stop-color="#0b4c8a"/><stop offset=".5" stop-color="#06396f"/><stop offset="1" stop-color="#021e40"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bd7e1f"/><stop offset=".55" stop-color="#e0aa42"/><stop offset="1" stop-color="#f4cf73"/></linearGradient>
+ <linearGradient id="opening" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ffffff"/><stop offset=".58" stop-color="#fffdf7"/><stop offset="1" stop-color="#fff0bd"/></linearGradient>
+ <radialGradient id="floorLight" cx="50%" cy="15%" r="80%"><stop stop-color="#ffe9a2" stop-opacity=".62"/><stop offset=".5" stop-color="#fff8dc" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+ <filter id="doorShadow" x="-40%" y="-40%" width="200%" height="210%"><feDropShadow dx="9" dy="12" stdDeviation="10" flood-color="#061e3c" flood-opacity=".23"/></filter>
+ <filter id="roadShadow" x="-40%" y="-40%" width="190%" height="210%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#06264c" flood-opacity=".19"/></filter>
 </defs>
 <rect width="1000" height="720" rx="34" fill="#fff"/>
-<ellipse cx="520" cy="176" rx="205" ry="170" fill="url(#glow)"/>
-<!-- Door: tall rectangular frame, bright opening and a wide leaf visibly swung toward the viewer/right -->
-<g filter="url(#softShadow)">
- <path d="M421 54H574V247H548V82H447V247H421Z" fill="url(#navy)"/>
- <path d="M443 77H554V242H543V91H457V242H443Z" fill="url(#gold)"/>
- <rect x="457" y="91" width="86" height="151" fill="url(#inside)"/>
- <!-- thin illuminated threshold -->
- <path d="M456 241H546L566 251H443Z" fill="#f3c45b" opacity=".45"/>
- <!-- open leaf: near edge at hinge, far edge strongly displaced right like the supplied reference -->
- <path d="M543 86L666 43V253L543 224Z" fill="url(#door)"/>
- <path d="M543 86L551 88V224L543 224Z" fill="#1763a2"/>
- <path d="M666 43L673 48V254L666 253Z" fill="#031a35" opacity=".85"/>
- <path d="M557 91L653 58V238L557 216Z" fill="#0b3f78" opacity=".20"/>
- <circle cx="638" cy="158" r="8" fill="url(#gold)"/>
- <circle cx="636" cy="156" r="2.5" fill="#fff3c5"/>
+<!-- light spilling out to the right, as in the supplied reference -->
+<ellipse cx="568" cy="250" rx="225" ry="125" fill="url(#floorLight)"/>
+<g filter="url(#doorShadow)">
+ <!-- simple tall blue rectangular frame -->
+ <path d="M420 50H568V250H542V76H446V250H420Z" fill="url(#frameBlue)"/>
+ <!-- thin gold inner jamb visible only around the illuminated opening -->
+ <path d="M443 73H548V248H539V84H454V248H443Z" fill="url(#gold)"/>
+ <!-- bright white opening -->
+ <rect x="454" y="84" width="85" height="164" fill="url(#opening)"/>
+ <!-- OPEN DOOR LEAF: vertical rectangle in perspective, hinged at the right side of opening; top/bottom stay nearly horizontal like reference -->
+ <path d="M539 79L650 52V252L539 228Z" fill="url(#doorBlue)"/>
+ <!-- darker outer edge gives thickness -->
+ <path d="M650 52L657 55V254L650 252Z" fill="#021a36"/>
+ <!-- subtle highlight on hinge edge -->
+ <path d="M539 79L546 81V229L539 228Z" fill="#1764a5" opacity=".72"/>
+ <!-- gold round knob centered toward outer edge -->
+ <circle cx="626" cy="154" r="7" fill="url(#gold)"/>
+ <circle cx="624.5" cy="152.5" r="2" fill="#fff1bc"/>
 </g>
-<!-- Road begins narrow exactly at the doorway and broadens toward viewer -->
+<!-- Road: comes directly out of opening, first curves LEFT, then sweeps toward lower right/front -->
 <g filter="url(#roadShadow)">
- <path d="M521 229C475 247 438 270 423 296C405 327 430 347 480 361C542 379 594 392 614 422C642 464 609 515 531 553C501 568 463 582 414 594C526 588 616 565 666 526C719 485 724 438 692 402C663 370 610 350 554 334C506 320 476 307 481 286C485 267 505 249 539 231Z" fill="url(#navy)"/>
- <path d="M527 232C495 251 477 268 475 284C472 306 500 319 544 333C601 351 644 371 659 400C678 438 652 478 595 512" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
- <path d="M532 231C502 251 487 268 488 283C490 302 514 313 553 326C608 345 647 365 660 393C676 427 654 462 607 493" fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+ <path d="M527 235C486 246 443 257 403 271C361 286 331 305 334 324C337 343 373 350 424 354C486 359 544 367 577 390C612 414 616 448 590 481C558 522 492 556 390 584C506 578 602 553 660 514C715 477 731 435 707 399C681 360 619 341 557 329C506 319 465 313 463 296C461 278 490 257 541 238Z" fill="url(#roadBlue)"/>
+ <!-- white stripe -->
+ <path d="M528 239C493 250 460 262 438 275C416 288 407 300 414 309C423 321 452 324 491 328C551 334 604 345 633 370C668 399 665 438 628 476C599 506 552 532 487 553" fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round"/>
+ <!-- gold stripe immediately beside white -->
+ <path d="M531 238C499 250 469 262 450 274C432 286 425 297 432 305C442 316 468 318 503 322C560 328 609 339 637 362C671 390 671 426 638 462C611 491 570 516 512 537" fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round"/>
 </g>
 <text x="500" y="525" text-anchor="middle" fill="#082b55" font-size="106" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700">Learning</text>
 <line x1="235" y1="575" x2="350" y2="575" stroke="#c9953a" stroke-width="3"/><line x1="650" y1="575" x2="765" y2="575" stroke="#c9953a" stroke-width="3"/>
