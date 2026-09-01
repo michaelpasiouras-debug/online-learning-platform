@@ -1,33 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
-<title id="title">Learning Street</title><desc id="desc">Learning Street online learning platform logo with an open navy door, warm light and a road leading toward it.</desc>
+<title id="title">Learning Street</title><desc id="desc">Learning Street logo with a three-dimensional open navy door, bright doorway and curved road.</desc>
 <defs>
-  <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061f40"/><stop offset=".55" stop-color="#0a3769"/><stop offset="1" stop-color="#174f87"/></linearGradient>
-  <linearGradient id="doorNavy" x1="0" y1="0" x2="1" y2=".7"><stop stop-color="#164f87"/><stop offset=".5" stop-color="#0b3768"/><stop offset="1" stop-color="#061d3d"/></linearGradient>
-  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b9822d"/><stop offset="1" stop-color="#e3b65e"/></linearGradient>
-  <linearGradient id="light" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fffdf7"/><stop offset=".55" stop-color="#fff8df"/><stop offset="1" stop-color="#e9b84f" stop-opacity=".35"/></linearGradient>
-  <radialGradient id="glow"><stop stop-color="#fff2bd" stop-opacity=".95"/><stop offset=".45" stop-color="#fff8df" stop-opacity=".48"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
-  <filter id="shadow" x="-30%" y="-30%" width="170%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#082b55" flood-opacity=".22"/></filter>
-  <filter id="doorShadow" x="-30%" y="-30%" width="180%" height="180%"><feDropShadow dx="9" dy="10" stdDeviation="8" flood-color="#061d3d" flood-opacity=".28"/></filter>
+ <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#062a55"/><stop offset=".58" stop-color="#073d77"/><stop offset="1" stop-color="#0b5598"/></linearGradient>
+ <linearGradient id="door" x1="0" y1="0" x2="1" y2=".3"><stop stop-color="#0d5799"/><stop offset=".42" stop-color="#083d75"/><stop offset="1" stop-color="#041d3b"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b77b20"/><stop offset=".55" stop-color="#dca743"/><stop offset="1" stop-color="#f2ca69"/></linearGradient>
+ <linearGradient id="inside" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff"/><stop offset=".65" stop-color="#fffdf4"/><stop offset="1" stop-color="#ffe8a5"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ffe7a0" stop-opacity=".7"/><stop offset=".45" stop-color="#fff8df" stop-opacity=".28"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+ <filter id="softShadow" x="-40%" y="-40%" width="190%" height="200%"><feDropShadow dx="8" dy="15" stdDeviation="13" flood-color="#082b55" flood-opacity=".22"/></filter>
+ <filter id="roadShadow" x="-30%" y="-30%" width="170%" height="190%"><feDropShadow dx="0" dy="13" stdDeviation="12" flood-color="#082b55" flood-opacity=".20"/></filter>
 </defs>
 <rect width="1000" height="720" rx="34" fill="#fff"/>
-<ellipse cx="523" cy="183" rx="190" ry="175" fill="url(#glow)"/>
-<g filter="url(#shadow)">
-  <!-- upright door frame, matching the approved logo reference -->
-  <path d="M430 67H575V246H548V94H457V246H430Z" fill="url(#navy)"/>
-  <path d="M451 86H557V238H544V101H466V238H451Z" fill="url(#gold)"/>
-  <rect x="466" y="101" width="78" height="137" fill="url(#light)"/>
-  <!-- clearly open door leaf, hinged on the right -->
-  <g filter="url(#doorShadow)">
-    <path d="M544 96L648 58V249L544 226Z" fill="url(#doorNavy)"/>
-    <path d="M544 96L553 99V225L544 226Z" fill="#194f80" opacity=".8"/>
-    <path d="M648 58L653 61V250L648 249Z" fill="#061a35" opacity=".75"/>
-    <circle cx="622" cy="160" r="7.5" fill="url(#gold)"/>
-    <circle cx="620.5" cy="158.5" r="2.3" fill="#fff1bc"/>
-  </g>
-  <!-- road emerging from the illuminated doorway -->
-  <path d="M514 226c-74 31-123 71-118 113 5 43 68 52 122 75 57 24 82 50 76 88-7 44-59 75-149 98 129-15 211-52 223-110 11-55-32-97-104-126-58-24-105-36-106-67-1-25 24-49 71-71z" fill="url(#navy)"/>
-  <path d="M522 229c-46 29-70 54-66 76 5 25 38 37 83 54 62 24 88 48 82 81-4 23-24 45-58 63 45-18 76-43 82-72 7-37-24-67-88-93-43-17-74-30-77-51-2-18 16-37 53-58z" fill="none" stroke="url(#gold)" stroke-width="12" stroke-linecap="round"/>
-  <path d="M527 229c-39 27-57 48-53 65 5 21 34 31 75 47 61 24 83 46 78 75" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="520" cy="176" rx="205" ry="170" fill="url(#glow)"/>
+<!-- Door: tall rectangular frame, bright opening and a wide leaf visibly swung toward the viewer/right -->
+<g filter="url(#softShadow)">
+ <path d="M421 54H574V247H548V82H447V247H421Z" fill="url(#navy)"/>
+ <path d="M443 77H554V242H543V91H457V242H443Z" fill="url(#gold)"/>
+ <rect x="457" y="91" width="86" height="151" fill="url(#inside)"/>
+ <!-- thin illuminated threshold -->
+ <path d="M456 241H546L566 251H443Z" fill="#f3c45b" opacity=".45"/>
+ <!-- open leaf: near edge at hinge, far edge strongly displaced right like the supplied reference -->
+ <path d="M543 86L666 43V253L543 224Z" fill="url(#door)"/>
+ <path d="M543 86L551 88V224L543 224Z" fill="#1763a2"/>
+ <path d="M666 43L673 48V254L666 253Z" fill="#031a35" opacity=".85"/>
+ <path d="M557 91L653 58V238L557 216Z" fill="#0b3f78" opacity=".20"/>
+ <circle cx="638" cy="158" r="8" fill="url(#gold)"/>
+ <circle cx="636" cy="156" r="2.5" fill="#fff3c5"/>
+</g>
+<!-- Road begins narrow exactly at the doorway and broadens toward viewer -->
+<g filter="url(#roadShadow)">
+ <path d="M521 229C475 247 438 270 423 296C405 327 430 347 480 361C542 379 594 392 614 422C642 464 609 515 531 553C501 568 463 582 414 594C526 588 616 565 666 526C719 485 724 438 692 402C663 370 610 350 554 334C506 320 476 307 481 286C485 267 505 249 539 231Z" fill="url(#navy)"/>
+ <path d="M527 232C495 251 477 268 475 284C472 306 500 319 544 333C601 351 644 371 659 400C678 438 652 478 595 512" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+ <path d="M532 231C502 251 487 268 488 283C490 302 514 313 553 326C608 345 647 365 660 393C676 427 654 462 607 493" fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
 </g>
 <text x="500" y="525" text-anchor="middle" fill="#082b55" font-size="106" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700">Learning</text>
 <line x1="235" y1="575" x2="350" y2="575" stroke="#c9953a" stroke-width="3"/><line x1="650" y1="575" x2="765" y2="575" stroke="#c9953a" stroke-width="3"/>
