@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
-<title id="title">Learning Street</title><desc id="desc">Learning Street logo with a refined open door angled thirty degrees to the left and a compact winding road that stays clear of the wordmark.</desc>
+<title id="title">Learning Street</title><desc id="desc">Learning Street logo rotated thirty degrees clockwise, with the door leaf rotated an additional sixty degrees clockwise.</desc>
 <defs>
   <linearGradient id="navyFrame" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b4f8d"/><stop offset=".55" stop-color="#073865"/><stop offset="1" stop-color="#041f3d"/></linearGradient>
   <linearGradient id="navyDoor" x1="0" y1="0" x2="1" y2=".25"><stop stop-color="#1260a5"/><stop offset=".48" stop-color="#0a437a"/><stop offset="1" stop-color="#031a35"/></linearGradient>
@@ -11,31 +11,39 @@
   <filter id="roadShadow" x="-30%" y="-30%" width="170%" height="190%"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#06264c" flood-opacity=".16"/></filter>
 </defs>
 <rect width="1000" height="720" rx="34" fill="#fff"/>
-<ellipse cx="515" cy="172" rx="185" ry="150" fill="url(#glow)"/>
 
-<!-- Door assembly rotated 30 degrees counter-clockwise (to the left) -->
-<g transform="rotate(-30 535 150)" filter="url(#shadow)">
-  <path d="M426 48H575V245H548V76H453V245H426Z" fill="url(#navyFrame)"/>
-  <path d="M449 72H555V242H544V86H461V242H449Z" fill="url(#gold)"/>
-  <rect x="461" y="86" width="83" height="156" fill="url(#opening)"/>
-  <path d="M544 83L643 61V246L544 225Z" fill="url(#navyDoor)"/>
-  <path d="M643 61L650 64V248L643 246Z" fill="#02172f"/>
-  <path d="M544 83L551 85V226L544 225Z" fill="#1b69a9" opacity=".55"/>
-  <circle cx="619" cy="155" r="7" fill="url(#gold)"/>
-  <circle cx="617.5" cy="153.5" r="2" fill="#fff0ba"/>
+<!-- Entire logo rotated 30 degrees clockwise -->
+<g transform="rotate(30 500 360)">
+  <ellipse cx="515" cy="172" rx="185" ry="150" fill="url(#glow)"/>
+
+  <!-- Door frame follows the overall 30 degree rotation -->
+  <g filter="url(#shadow)">
+    <path d="M426 48H575V245H548V76H453V245H426Z" fill="url(#navyFrame)"/>
+    <path d="M449 72H555V242H544V86H461V242H449Z" fill="url(#gold)"/>
+    <rect x="461" y="86" width="83" height="156" fill="url(#opening)"/>
+
+    <!-- Only the door leaf gets an additional 60 degree clockwise rotation around its hinge -->
+    <g transform="rotate(60 544 154)">
+      <path d="M544 83L643 61V246L544 225Z" fill="url(#navyDoor)"/>
+      <path d="M643 61L650 64V248L643 246Z" fill="#02172f"/>
+      <path d="M544 83L551 85V226L544 225Z" fill="#1b69a9" opacity=".55"/>
+      <circle cx="619" cy="155" r="7" fill="url(#gold)"/>
+      <circle cx="617.5" cy="153.5" r="2" fill="#fff0ba"/>
+    </g>
+  </g>
+
+  <!-- Road follows only the overall 30 degree rotation -->
+  <g filter="url(#roadShadow)">
+    <path d="M522 232C486 243 450 255 423 269C396 283 383 296 389 309C396 324 425 327 463 330C508 334 550 340 571 354C589 366 592 380 582 394C567 414 536 429 492 440C547 436 593 425 620 407C645 390 651 369 636 351C620 333 586 324 550 317C516 310 490 304 489 291C488 276 507 254 537 235Z" fill="url(#roadNavy)"/>
+    <path d="M526 236C502 247 482 258 470 269C459 279 456 287 462 294C470 303 489 306 515 309C551 314 582 322 598 335C616 350 615 368 597 385" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M530 235C507 247 489 258 479 268C470 277 469 284 475 290C483 298 501 301 524 304C558 309 586 316 601 328C618 341 620 357 607 372" fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <text x="500" y="505" text-anchor="middle" fill="#082b55" font-size="106" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700">Learning</text>
+  <line x1="235" y1="558" x2="350" y2="558" stroke="#c9953a" stroke-width="3"/>
+  <line x1="650" y1="558" x2="765" y2="558" stroke="#c9953a" stroke-width="3"/>
+  <text x="500" y="572" text-anchor="middle" fill="#082b55" font-size="48" font-family="Arial, sans-serif" letter-spacing="18">STREET</text>
+  <text x="500" y="630" text-anchor="middle" fill="#173d6a" font-size="20" font-family="Arial, sans-serif" letter-spacing="7">ONLINE LEARNING PLATFORM</text>
+  <text x="500" y="674" text-anchor="middle" fill="#6b7688" font-size="18" font-family="Georgia, serif" font-style="italic">Your path to knowledge. Your future.</text>
 </g>
-
-<!-- Compact road remains separate from STREET -->
-<g filter="url(#roadShadow)">
-  <path d="M522 232C486 243 450 255 423 269C396 283 383 296 389 309C396 324 425 327 463 330C508 334 550 340 571 354C589 366 592 380 582 394C567 414 536 429 492 440C547 436 593 425 620 407C645 390 651 369 636 351C620 333 586 324 550 317C516 310 490 304 489 291C488 276 507 254 537 235Z" fill="url(#roadNavy)"/>
-  <path d="M526 236C502 247 482 258 470 269C459 279 456 287 462 294C470 303 489 306 515 309C551 314 582 322 598 335C616 350 615 368 597 385" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
-  <path d="M530 235C507 247 489 258 479 268C470 277 469 284 475 290C483 298 501 301 524 304C558 309 586 316 601 328C618 341 620 357 607 372" fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round"/>
-</g>
-
-<text x="500" y="505" text-anchor="middle" fill="#082b55" font-size="106" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700">Learning</text>
-<line x1="235" y1="558" x2="350" y2="558" stroke="#c9953a" stroke-width="3"/>
-<line x1="650" y1="558" x2="765" y2="558" stroke="#c9953a" stroke-width="3"/>
-<text x="500" y="572" text-anchor="middle" fill="#082b55" font-size="48" font-family="Arial, sans-serif" letter-spacing="18">STREET</text>
-<text x="500" y="630" text-anchor="middle" fill="#173d6a" font-size="20" font-family="Arial, sans-serif" letter-spacing="7">ONLINE LEARNING PLATFORM</text>
-<text x="500" y="674" text-anchor="middle" fill="#6b7688" font-size="18" font-family="Georgia, serif" font-style="italic">Your path to knowledge. Your future.</text>
 </svg>
