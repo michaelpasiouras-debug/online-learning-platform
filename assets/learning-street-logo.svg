@@ -1,46 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
-<title id="title">Learning Street</title><desc id="desc">Learning Street logo with open blue door and winding road.</desc>
+<title id="title">Learning Street</title><desc id="desc">Learning Street logo with a refined open door and a compact winding road that stays clear of the wordmark.</desc>
 <defs>
- <linearGradient id="frameBlue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07539a"/><stop offset=".55" stop-color="#063a73"/><stop offset="1" stop-color="#03274f"/></linearGradient>
- <linearGradient id="doorBlue" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0b5ba2"/><stop offset=".42" stop-color="#08437f"/><stop offset="1" stop-color="#031d3c"/></linearGradient>
- <linearGradient id="roadBlue" x1=".2" y1="0" x2=".8" y2="1"><stop stop-color="#0b4c8a"/><stop offset=".5" stop-color="#06396f"/><stop offset="1" stop-color="#021e40"/></linearGradient>
- <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bd7e1f"/><stop offset=".55" stop-color="#e0aa42"/><stop offset="1" stop-color="#f4cf73"/></linearGradient>
- <linearGradient id="opening" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ffffff"/><stop offset=".58" stop-color="#fffdf7"/><stop offset="1" stop-color="#fff0bd"/></linearGradient>
- <radialGradient id="floorLight" cx="50%" cy="15%" r="80%"><stop stop-color="#ffe9a2" stop-opacity=".62"/><stop offset=".5" stop-color="#fff8dc" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
- <filter id="doorShadow" x="-40%" y="-40%" width="200%" height="210%"><feDropShadow dx="9" dy="12" stdDeviation="10" flood-color="#061e3c" flood-opacity=".23"/></filter>
- <filter id="roadShadow" x="-40%" y="-40%" width="190%" height="210%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#06264c" flood-opacity=".19"/></filter>
+  <linearGradient id="navyFrame" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b4f8d"/><stop offset=".55" stop-color="#073865"/><stop offset="1" stop-color="#041f3d"/></linearGradient>
+  <linearGradient id="navyDoor" x1="0" y1="0" x2="1" y2=".25"><stop stop-color="#1260a5"/><stop offset=".48" stop-color="#0a437a"/><stop offset="1" stop-color="#031a35"/></linearGradient>
+  <linearGradient id="roadNavy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b4f8d"/><stop offset=".6" stop-color="#062f5a"/><stop offset="1" stop-color="#031b38"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bb7d20"/><stop offset=".55" stop-color="#dfa843"/><stop offset="1" stop-color="#f1cc72"/></linearGradient>
+  <linearGradient id="opening" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff"/><stop offset=".72" stop-color="#fffdf5"/><stop offset="1" stop-color="#ffe7a2"/></linearGradient>
+  <radialGradient id="glow" cx="50%" cy="35%" r="70%"><stop stop-color="#ffe8a7" stop-opacity=".68"/><stop offset=".45" stop-color="#fff6d9" stop-opacity=".25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <filter id="shadow" x="-35%" y="-35%" width="190%" height="200%"><feDropShadow dx="7" dy="11" stdDeviation="9" flood-color="#06264c" flood-opacity=".22"/></filter>
+  <filter id="roadShadow" x="-30%" y="-30%" width="170%" height="190%"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#06264c" flood-opacity=".16"/></filter>
 </defs>
 <rect width="1000" height="720" rx="34" fill="#fff"/>
-<!-- light spilling out to the right, as in the supplied reference -->
-<ellipse cx="568" cy="250" rx="225" ry="125" fill="url(#floorLight)"/>
-<g filter="url(#doorShadow)">
- <!-- simple tall blue rectangular frame -->
- <path d="M420 50H568V250H542V76H446V250H420Z" fill="url(#frameBlue)"/>
- <!-- thin gold inner jamb visible only around the illuminated opening -->
- <path d="M443 73H548V248H539V84H454V248H443Z" fill="url(#gold)"/>
- <!-- bright white opening -->
- <rect x="454" y="84" width="85" height="164" fill="url(#opening)"/>
- <!-- OPEN DOOR LEAF: vertical rectangle in perspective, hinged at the right side of opening; top/bottom stay nearly horizontal like reference -->
- <path d="M539 79L650 52V252L539 228Z" fill="url(#doorBlue)"/>
- <!-- darker outer edge gives thickness -->
- <path d="M650 52L657 55V254L650 252Z" fill="#021a36"/>
- <!-- subtle highlight on hinge edge -->
- <path d="M539 79L546 81V229L539 228Z" fill="#1764a5" opacity=".72"/>
- <!-- gold round knob centered toward outer edge -->
- <circle cx="626" cy="154" r="7" fill="url(#gold)"/>
- <circle cx="624.5" cy="152.5" r="2" fill="#fff1bc"/>
+<ellipse cx="515" cy="172" rx="185" ry="150" fill="url(#glow)"/>
+
+<!-- NEW DOOR: cleaner, taller frame and a distinct door leaf opened to the right -->
+<g filter="url(#shadow)">
+  <path d="M426 48H575V245H548V76H453V245H426Z" fill="url(#navyFrame)"/>
+  <path d="M449 72H555V242H544V86H461V242H449Z" fill="url(#gold)"/>
+  <rect x="461" y="86" width="83" height="156" fill="url(#opening)"/>
+  <path d="M544 83L643 61V246L544 225Z" fill="url(#navyDoor)"/>
+  <path d="M643 61L650 64V248L643 246Z" fill="#02172f"/>
+  <path d="M544 83L551 85V226L544 225Z" fill="#1b69a9" opacity=".55"/>
+  <circle cx="619" cy="155" r="7" fill="url(#gold)"/>
+  <circle cx="617.5" cy="153.5" r="2" fill="#fff0ba"/>
 </g>
-<!-- Road: comes directly out of opening, first curves LEFT, then sweeps toward lower right/front -->
+
+<!-- COMPACT ROAD: deliberately ends above the Learning/Street text -->
 <g filter="url(#roadShadow)">
- <path d="M527 235C486 246 443 257 403 271C361 286 331 305 334 324C337 343 373 350 424 354C486 359 544 367 577 390C612 414 616 448 590 481C558 522 492 556 390 584C506 578 602 553 660 514C715 477 731 435 707 399C681 360 619 341 557 329C506 319 465 313 463 296C461 278 490 257 541 238Z" fill="url(#roadBlue)"/>
- <!-- white stripe -->
- <path d="M528 239C493 250 460 262 438 275C416 288 407 300 414 309C423 321 452 324 491 328C551 334 604 345 633 370C668 399 665 438 628 476C599 506 552 532 487 553" fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round"/>
- <!-- gold stripe immediately beside white -->
- <path d="M531 238C499 250 469 262 450 274C432 286 425 297 432 305C442 316 468 318 503 322C560 328 609 339 637 362C671 390 671 426 638 462C611 491 570 516 512 537" fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M522 232C486 243 450 255 423 269C396 283 383 296 389 309C396 324 425 327 463 330C508 334 550 340 571 354C589 366 592 380 582 394C567 414 536 429 492 440C547 436 593 425 620 407C645 390 651 369 636 351C620 333 586 324 550 317C516 310 490 304 489 291C488 276 507 254 537 235Z" fill="url(#roadNavy)"/>
+  <path d="M526 236C502 247 482 258 470 269C459 279 456 287 462 294C470 303 489 306 515 309C551 314 582 322 598 335C616 350 615 368 597 385" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M530 235C507 247 489 258 479 268C470 277 469 284 475 290C483 298 501 301 524 304C558 309 586 316 601 328C618 341 620 357 607 372" fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round"/>
 </g>
-<text x="500" y="525" text-anchor="middle" fill="#082b55" font-size="106" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700">Learning</text>
-<line x1="235" y1="575" x2="350" y2="575" stroke="#c9953a" stroke-width="3"/><line x1="650" y1="575" x2="765" y2="575" stroke="#c9953a" stroke-width="3"/>
-<text x="500" y="590" text-anchor="middle" fill="#082b55" font-size="48" font-family="Arial, sans-serif" letter-spacing="18">STREET</text>
-<text x="500" y="645" text-anchor="middle" fill="#173d6a" font-size="20" font-family="Arial, sans-serif" letter-spacing="7">ONLINE LEARNING PLATFORM</text>
-<text x="500" y="687" text-anchor="middle" fill="#6b7688" font-size="18" font-family="Georgia, serif" font-style="italic">Your path to knowledge. Your future.</text>
+
+<!-- Wordmark: fully separated from road -->
+<text x="500" y="505" text-anchor="middle" fill="#082b55" font-size="106" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700">Learning</text>
+<line x1="235" y1="558" x2="350" y2="558" stroke="#c9953a" stroke-width="3"/>
+<line x1="650" y1="558" x2="765" y2="558" stroke="#c9953a" stroke-width="3"/>
+<text x="500" y="572" text-anchor="middle" fill="#082b55" font-size="48" font-family="Arial, sans-serif" letter-spacing="18">STREET</text>
+<text x="500" y="630" text-anchor="middle" fill="#173d6a" font-size="20" font-family="Arial, sans-serif" letter-spacing="7">ONLINE LEARNING PLATFORM</text>
+<text x="500" y="674" text-anchor="middle" fill="#6b7688" font-size="18" font-family="Georgia, serif" font-style="italic">Your path to knowledge. Your future.</text>
 </svg>
